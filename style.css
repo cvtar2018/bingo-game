@@ -12,22 +12,20 @@ th, tr {
 }
 
 
-<style>
-    div#description {
-        background-color: gray;
-        height: 25%;
-        border: 2px black;
-    }
-    tr {
-        line-height: 25px;
-    }
-    .container {
-        height: 100%
-    }
-    table {
-        height: 100%
-    }
-    #topics tr {
-        line-height: 14px;
-    }
-</style>
+div#description {
+    background-color: gray;
+    height: 25%;
+    border: 2px black;
+}
+tr {
+    line-height: 25px;
+}
+.container {
+    height: 100%
+}
+table {
+    height: 100%
+}
+#topics tr {
+    line-height: 14px;
+}
