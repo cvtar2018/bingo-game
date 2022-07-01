@@ -1,26 +1,41 @@
-function giveAlert () {
-    alert("Successful")
-}
-
-function initBoard () {
-    
-}
-
-const arr1 = [1,2,3,4,5,6]
+// Generate Integer Number from 1 to 99 and apply it to board
+const arr1 = Array(99).fill(1).map((n, i) => n + i)
 const arr2 = []
+console.log(arr1)
 
-const ran = () => {
-  const index = Math.floor(Math.random() * arr1.length);
-  if(arr1.length>0)
-  {
-    arr2.push(arr1[index])
-    arr1.splice(index, 1)
-    
-    const display = document.getElementById('array')
-    display.innerText = ("\nArray 2 elements " + arr2.toString() + "\n Remaining Array 1 elements" + arr1.toString())
-  }
-  else
-    {
-      document.write("Array is now empty");
+function ran() {
+    const index = Math.floor(Math.random() * arr1.length)
+    if (arr1.length > 0) {
+        arr2.push(arr1[index])
+        arr1.splice(index, 1)
+        const display = document.getElementById('a')
+        
+    }
+
+    else {
+        alert("Bingo Board Ready!")
     }
 }
+
+// Function to generate random number and pull it from list to avoid duplication
+for ( var i = 0; i < 100 ; i++) {
+    ran()
+}
+
+console.log(arr2)
+// console.log(display)
+
+// function giveAlert () {
+//     alert("Successful")
+// }
+
+// function initBoard () {
+
+// }
+
+
+// > 
+
+
+
+

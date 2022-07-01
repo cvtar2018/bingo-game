@@ -31,31 +31,28 @@
     <br>
     <br>
     <div class="container">
-        <div class="forms">
-            <form>  
-                <input type = "button" onclick = "giveAlert()" value = "Begin Algorithm">   
+        <!-- <div class="forms">
+            <form id="rand">  
+                <input type = "button" onclick = "ran()" value = "Begin Algorithm">   
             </form>
             <br>
-        </div>
+        </div> -->
         <script>
             // BEGIN to Define The BINGO RULES
-            var myBingoBoards = {}
-            
-
-
-
+            // var myBingoBoards = {}
+        
             // iterate tables
-            for (var tablex = 0; tablex < 5; tablex++) {
+            for (var tablex = 0; tablex < 100; tablex++) {
                 document.writeln('<div class="row">');
                     document.writeln('<div class="col-md row justify-content-center">')
-                        document.writeln('<table class="table table-bordered">');
+                        document.writeln('<table class="table table-bordered" onload="ran()">');
                         for (var i = 0; i < 5; i++) {                
                             // iterate through rows
                             document.writeln('<tr>');
                             for (var j = 0; j < 5; j++) {
                                 // iterate through columns
-                                document.writeln('<td>');
-                                document.writeln('<p class="text-white font-weight-bold text-center">99</p>');
+                                document.writeln('<td id="a">');
+                                document.writeln('<p id="array" class="text-white font-weight-bold text-center"></p>');
                                 document.writeln('</td>');              
                             }
                             // document.writeln('<td>Column</td>')
