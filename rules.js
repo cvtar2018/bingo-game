@@ -1,6 +1,7 @@
 // Generate Integer Number from 1 to 99 and apply it to board
 const arr1 = Array(99).fill(1).map((n, i) => n + i)
 const arr2 = []
+var arrCoordinate = {}
 console.log(arr1)
 
 function ran() {
@@ -21,8 +22,17 @@ function ran() {
 for ( var i = 0; i < 100 ; i++) {
     ran()
 }
-
 console.log(arr2)
+console.log(arrCoordinate)
+
+// function displayCoordinate (tablex, i, j) {
+//     for (var y = 0; y < arr2.length ; y++ ) {
+//         console.log(`arr2${y} = ${arr2[y]}`)
+//     }
+//     arrCoordinate[tablex, [i, [j]]] = arr2[y]
+// }
+
+
 // console.log(display)
 
 // function giveAlert () {

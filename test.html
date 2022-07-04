@@ -39,21 +39,27 @@
         </div> -->
         <script>
             // BEGIN to Define The BINGO RULES
-            // var myBingoBoards = {}
+            var x = 0;
         
             // iterate tables
-            for (var tablex = 0; tablex < 100; tablex++) {
+            for (var tablex = 0; tablex < 4; tablex++) {
+                //ran();
+                
                 document.writeln('<div class="row">');
                     document.writeln('<div class="col-md row justify-content-center">')
-                        document.writeln('<table class="table table-bordered" onload="ran()">');
+                        document.writeln('<table class="table table-bordered">');
                         for (var i = 0; i < 5; i++) {                
                             // iterate through rows
                             document.writeln('<tr>');
                             for (var j = 0; j < 5; j++) {
                                 // iterate through columns
+                                // displayCoordinate(tablex, i, j);
                                 document.writeln('<td id="a">');
-                                document.writeln('<p id="array" class="text-white font-weight-bold text-center"></p>');
-                                document.writeln('</td>');              
+                                document.writeln('<p id="array" class="text-white font-weight-bold text-center">' + arr2[x] + '</p>');
+                                document.writeln('</td>'); 
+                                x += 1;
+                                
+
                             }
                             // document.writeln('<td>Column</td>')
                             document.writeln('</tr>');
@@ -72,6 +78,7 @@
                     value: 99,
                 }
                 console.log(myBingoBoards);
+                
             }
             console.log(tablex);
             
